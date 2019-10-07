@@ -1,5 +1,5 @@
 body{
-    background-color: #202020;
+    background-color: #a7a7a7;
 }
 h1{
     background-color: #fff;
@@ -13,7 +13,7 @@ li{
     font-size: 30px;
 }li a{
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 li a :hover{
     background-color: #fff;
@@ -23,5 +23,5 @@ li a :hover{
     text-decoration: underline;
     font-size: 20px;
     margin-left: 1%;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
