@@ -1,7 +1,9 @@
 import java.util.Scanner;
 public class exer1 {
+	private static Scanner in;
+
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		in = new Scanner(System.in);
 		int d, c=0;
 		int a[] = new int [20];
 		int b[] = new int [20];
@@ -23,8 +25,12 @@ public class exer1 {
 		}
 		System.out.print("[");
 		for(int i=0;i<20;i++) {
-			System.out.print(b[i]+" - ");
+			if(i==19) {
+				System.out.print(b[i]+"]");
+			}else {
+				System.out.print(b[i]+" - ");
+			}
 		}
-		System.out.print("]");
+		
 	}
 }
