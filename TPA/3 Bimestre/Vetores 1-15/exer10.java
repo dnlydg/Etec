@@ -2,10 +2,14 @@ import java.util.Scanner;
 public class exer10 {
 	public static void main(String[]args) {
 		
+		//CÓDIGO NÃO FUNCIONA!
+		//CÓDIGO NÃO FUNCIONA!
+		//CÓDIGO NÃO FUNCIONA!
+		
 		Scanner in = new Scanner(System.in);
 		int a[] = new int [10];
 		int b[] = new int [10];
-		int x=0,con=0;
+		int t=0;
 		int c[] = new int [10];
 		for(int i=0;i<10;i++) {
 			System.out.println("Digite o "+(i+1)+"º valor do vetor A");
@@ -14,17 +18,20 @@ public class exer10 {
 			b[i] = in.nextInt();
 		}
 		for(int i=0;i<10;i++) {
-			con = 0;
-			while(con<10) {
+			for(int con=0;con<10;con++) {
 				if(a[i]!=b[con]) {
-					x++;
 					c[i]=a[i];
+					t++;
 				}
-				con++;
 			}
 		}
+		System.out.print("[");
 		for(int i=0;i<10;i++) {
-			System.out.print(c[i]+" ,");
+			if(i==9) {
+				System.out.print(c[i]+"]");
+			}else {
+				System.out.print(c[i]+" ,");
+			}
 		}
 	}
 }

@@ -16,8 +16,13 @@ public class exer13 {
 				b[i] = 0;
 			}
 		}
+		System.out.print("[");
 		for(int i=0;i<10;i++) {
+			if(i==9) {
+				System.out.print(b[i]+"]");
+			}else {
 			System.out.print(b[i]+", ");
+			}
 		}
 	}
 }

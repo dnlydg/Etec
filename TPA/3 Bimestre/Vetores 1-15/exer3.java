@@ -7,6 +7,7 @@ public class exer3 {
 		for(int i=0;i<10;i++) {
 			System.out.println("Digite o "+(i+1)+"º valor:");
 			a[i] = in.nextInt();
+			r=0;
 			for (int f=1;f<=a[i];f++) {
 				if (a[i]%f==0) {
 					r++;

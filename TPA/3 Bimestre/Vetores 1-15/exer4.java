@@ -16,6 +16,7 @@ public class exer4 {
 					System.out.println(a[i]+":"+p);
 				}p++;
 			}
+			System.out.println("____________________");
 			p=0;
 		}
 	}
