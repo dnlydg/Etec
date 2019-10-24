@@ -2,43 +2,30 @@ import java.util.Scanner;
 import java.lang.Math;
 public class Exer4_Bingo {
 	public static void main(String[]args) {
+		int t=0, l=0, c=0, p=0;
 		int tabela[][] = new int [4][4];
+		int a [] = new int [17];
 		int lixeira,contador=0,ns,vitoria=0,cr=0,ca=0;
 		for(int i=0;i<4;i++) {
 			for(int j=0;j<4;j++) {
 				tabela[i][j] = (int) (Math.random()*75);
-				lixeira = tabela[i][j];
-				for(int y=0;y<4;y++) {
-					for(int x=0;x<4;x++) {
-						if(lixeira == tabela[y][x]) {
-							contador++;
+				a [t] = tabela[i][j];
+				while(c<t) {
+					while(p<t) {
+						if (a[t]==tabela[i][j]) {
+							tabela[i][j] = (int) (Math.random()*75);
+							p=0;
+							c=0;
+							t--;
 						}
-						if(contador==2) {
-							tabela[y][x] = (int) (Math.random()*75);
-							break;
-						}else if(lixeira==0) {
-							tabela[y][x] = (int) (Math.random()*75);
-							break;
-						}
-						for(int t=0;t<4;t++) {
-							for(int o=0;o<4;o++) {
-								if(lixeira == tabela[t][o]) {
-									contador++;
-								}
-								if(contador==2) {
-									tabela[t][o] = (int) (Math.random()*75);
-									break;
-								}else if(lixeira==0) {
-									tabela[t][o] = (int) (Math.random()*75);
-									break;
-								}
-							}
-						}
+						t++;
+						p++;
 					}
+					c++;
 				}
 			}
 		}
-		System.out.println("Xx-TABELA-xX");
+		System.out.println("Xx-CARTELA-xX");
 		for(int i=0;i<4;i++) {
 			System.out.print("\n");
 			for(int j=0;j<4;j++) {
