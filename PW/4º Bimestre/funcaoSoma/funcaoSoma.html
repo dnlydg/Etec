@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Função Soma</title>
+    </head>
+    <body>
+        <br><br>
+        <form name="formCalcular">
+            <input type="text" id="txtn1" name="txtn1">
+            <br>
+            <input type="text" id="txtn2" name="txtn2">
+            <br>
+            <input type="button" onclick="soma()">
+        </form>
+        <script>
+            function soma(){
+                var n1,n2,soma;
+                n1=parseInt(document.getElementById("txtn1").value);
+                n2=parseInt(document.getElementById("txtn2").value);
+                soma=n1+n2;
+                alert("A Soma é "+soma)
+            }
+        </script>
+    </body>
+</html>

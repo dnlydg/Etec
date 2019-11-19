@@ -1,0 +1,27 @@
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício 3</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            var nomecompletom,nomecompleto,nome,sobrenome,c=0,alno,t;
+            nomecompletom = prompt("Digite seu nome:");
+            nomecompleto = nomecompletom.toLocaleLowerCase();
+            alno = nomecompleto.length;
+            nome = nomecompleto.charAt(0);
+            while(c<=alno){
+                t=nomecompleto.charAt(c);
+                if(t==' '){
+                    sobrenome = nomecompleto.substring(c+1);
+                }
+                c++;
+            }
+            alert("Seu usuário é: "+nome+"."+sobrenome);
+        </script>
+        <a href="index.html" style="float: left; text-decoration: none; color: black; margin-top: 10%">Voltar</a>
+    </body>
+
+</html>

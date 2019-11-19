@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>ISSO É JAVA PARTE 2</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var n1,n2,n3,n4,n,m;
+            n = prompt("Digite o Nome");
+            n1 = parseFloat (prompt("Digite a 1 Nota"));
+            n2 = parseFloat (prompt("Digite a 2 Nota"));
+            n3 = parseFloat (prompt("Digite a 3 Nota"));
+            n4 = parseFloat (prompt("Digite a 4 Nota"));
+            m = (n1+n2+n3+n4)/4;
+            if (m<=3) {
+                alert ("Aluno Retido");
+            }else if (m<6){
+                alert ("Aluno em Exame");
+            }else {
+                alert ("Aluno Promovido");
+            }
+            document.write("Aluno:"+n+" | Média:"+m);
+        </script>
+    </body>
+</html>

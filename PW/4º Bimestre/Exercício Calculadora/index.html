@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>CALCULADORA FEITA NO BRACKETS</title>
+    </head>
+    <body>
+        <br><br>
+        <form name="formCalcular">
+            <input type="text" id="txtn1" name="txtn1" style="width: 5%">
+            <input type="text" id="txtn2" name="txtn2" style="width: 5%">
+            <br>
+            <br>
+            <button onclick="soma()" style="width: 5%">+</button>
+            <button onclick="divisao()" style="width: 5%">/</button>
+            <br>
+            <button onclick="multiplica()" style="width: 5%">x</button>
+            <button onclick="subtrair()" style="width: 5%">-</button>
+        </form>
+        <script>
+            function soma(){
+                var n1,n2,soma;
+                n1=parseInt(document.getElementById("txtn1").value);
+                n2=parseInt(document.getElementById("txtn2").value);
+                soma=n1+n2;
+                alert("A Soma é "+soma)
+            }
+            function subtrair(){
+                var n1,n2,soma;
+                n1=parseInt(document.getElementById("txtn1").value);
+                n2=parseInt(document.getElementById("txtn2").value);
+                soma=n1-n2;
+                alert("A Subtração é "+soma)
+            }
+            function divisao(){
+                var n1,n2,soma;
+                n1=parseInt(document.getElementById("txtn1").value);
+                n2=parseInt(document.getElementById("txtn2").value);
+                soma=n1/n2;
+                alert("A Divisão é "+soma)
+            }
+            function multiplica(){
+                var n1,n2,soma;
+                n1=parseInt(document.getElementById("txtn1").value);
+                n2=parseInt(document.getElementById("txtn2").value);
+                soma=n1*n2;
+                alert("A Multiplicação é "+soma)
+            }
+            
+        </script>
+    </body>
+</html>

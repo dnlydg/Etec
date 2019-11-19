@@ -1,0 +1,44 @@
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício 4</title>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            var frasem,frase,tamafra,c1=0,c2,f,p,n,t;
+            frasem = prompt("Digite a frase:");
+            frase = frasem.toLocaleLowerCase();
+            tamafra = frase.length;
+            while(c1<tamafra){
+                if(frase.charAt(c1) == " "){
+                    tamafra=tamafra-1;
+                    frase = frase.replace(" ","");
+                }else if(frase.charAt(c1) == "."){
+                    tamafra=tamafra-1;
+                    frase = frase.replace(".","");
+                }
+                c1++;
+            }
+            c1=0;
+            c2 = tamafra-1;
+            while(c1<tamafra/2){
+                p = frase.charAt(c1);
+                n = frase.charAt(c2);
+                if(p!=n){
+                    f=1;
+                }
+                c1++;
+                c2--;
+            }
+            if(f==1){
+                alert("Não é palindromo!");
+            }else{
+                alert("É Palíndromo!");
+            }
+        </script>
+        <a href="index.html" style="float: left; text-decoration: none; color: black; margin-top: 10%">Voltar</a>
+    </body>
+
+</html>

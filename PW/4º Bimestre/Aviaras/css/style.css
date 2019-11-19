@@ -1,0 +1,236 @@
+body{
+    background: #F0F0F0;
+}
+.corpo{
+    margin-top: 7%;
+}
+.corpo2{
+    margin-top: 3%;
+}
+.navbar {
+    background-color: #fd0;
+    animation-duration:
+    1s;
+    animation-name: desce;
+    width: 100%;
+}
+.logomenu {
+    animation-duration: 2s;
+    animation-name: imagem;
+}
+
+nav {
+    background-color: #fd0;
+}
+
+.fa-user {
+    width: 180px;
+}
+
+footer {
+    background: black;
+}
+
+.logorodape {
+    height: 33%;
+    width: auto;
+}
+
+.texte {
+    color: #fd0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+}
+.textero {
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+.textoro:hover {
+    font-size: 66px;
+}
+.nav-link{
+    align-content: center;
+    color: black;
+    font-family: Mukta,sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    animation-duration: 2s;
+    animation-name: imagem;
+}
+.textomenu{
+    align-content: center;
+    color: #525252;
+    font-family: Mukta,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    animation-duration: 3s;
+    animation-name: imagem;
+}
+.textomenu:hover {
+    color: black;
+    text-decoration: underline;
+    padding: 6px;
+    background: rgb(255, 240, 154);
+    transition: 500ms;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.cardhomecar{
+    float: left;
+    margin-top: 3%;
+}
+.imagemcard{
+    margin-left: 3%;
+}
+.cardpf{
+    justify-content: center;
+}
+.imagemcard1{
+    height: 350px;
+    padding: 15%;
+    padding-bottom: 0%;
+    padding-top: 5%;
+}
+.textocard{
+    margin-bottom: 8px;
+}
+small{
+    color: #4D4D4D;
+}
+.teste{
+    font-size: 30px;
+}
+.botao1{
+    color: black;
+    border-color: black;
+}
+.codigo{
+    float: right;
+}
+.cardhomecar:hover{
+    float: left;
+    margin-top: 3%;
+    box-shadow: 1px 0px 18px 2px rgba(207,207,207,0.83);
+    transition: 200ms;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fd0;
+    border-radius: 5px;
+}
+.txtbotao{
+    font-weight:bold;
+}
+.desconto{
+    width: 30%;
+}
+.txtbotaod{
+    font-weight:bold;
+    align-content: center;
+    color: #525252;
+    font-family: Mukta,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    animation-duration: 3s;
+    animation-name: imagem;
+}
+.botaod{
+    float: right;
+}
+.linha{
+    color: #fd0;
+    background-color: #fd0;
+    height:1px;
+    margin: 0px;
+}
+.trodape{
+    color: #fd0;
+    text-decoration: none;
+}
+.btnduvida{
+    background-color:black;
+    border-radius: 0px;
+}
+.btnduvida:hover{
+    background-color: #333333;
+    border-color: #fd0;
+}
+.trodape:hover{
+    color: #fd0;
+    text-decoration: underline;
+}
+.cardduvida{
+    margin-bottom: 3%;
+    width: 20%;
+}
+.btnhmais{
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.txtrodape{
+    color: #737373;
+}
+.rodapeb{
+    background-color: #262626;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.txtrodapeb{
+    color: white;
+    margin-bottom: 0px;
+    font-family: Mukta,sans-serif;
+    font-weight: 500;
+}
+.quebrasessao{
+    color: #BFBFBF;
+    background-color: #BFBFBF;
+    width: 100%;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#titulo{
+    background-color: #000000;
+    color: #fd0;;
+}
+.form-control{
+    transition: 500ms;
+    background-color: #E5E5E1;
+    border-color: #fd0;
+}
+.form-control::placeholder{
+    color: #000000;
+}
+.form-control:hover{
+    transition: 500ms;
+    background-color: #ffffff;
+}
+.carrin{
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+@keyframes imagem{
+    from{
+        opacity: 0%;
+    }
+    
+    to{
+        opacity: 100%;   
+    }
+}
+@keyframes desce{
+    from{
+        height: 0px;
+        width: 100%;
+    }
+    to{
+        height: 8%;
+        width: 100%;
+    }
+}
+h1{
+    font-size: 25px;
+}
